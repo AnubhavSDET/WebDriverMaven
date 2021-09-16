@@ -23,7 +23,7 @@ public class LoginTest {
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("anubhav.jain@gmail.com");
 		driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("anubhav@123");
-		driver.findElement(By.xpath("//*[@type='submit']")).click();
+		//driver.findElement(By.xpath("//*[@type='submit']")).click();
 	}
 	
 	@AfterSuite
