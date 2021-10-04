@@ -18,9 +18,10 @@ public class LoginTest {
 	}
 
 	@Test
-	public void doLogin(){
+	public void doLogin() throws InterruptedException{
 		driver.get("https://www.demoblaze.com/");
 		driver.manage().window().maximize();
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id=\"login2\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"loginusername\"]")).sendKeys("anubhav.jain@gmail.com");
 		driver.findElement(By.xpath("//*[@id=\"loginpassword\"]")).sendKeys("anubhav@123");
