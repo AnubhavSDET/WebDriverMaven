@@ -19,12 +19,12 @@ public class LoginTest {
 
 	@Test
 	public void doLogin() throws InterruptedException{
-		driver.get("https://www.demoblaze.com/");
+		driver.get("https://stackoverflow.com/");
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"login2\"]")).click();
-		driver.findElement(By.xpath("//*[@id=\"loginusername\"]")).sendKeys("anubhav.jain@gmail.com");
-		driver.findElement(By.xpath("//*[@id=\"loginpassword\"]")).sendKeys("anubhav@123");
+		driver.findElement(By.xpath("/html/body/header/div/ol[2]/li[2]/a[1]")).click();
+		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("anubhav.jain@gmail.com");
+		driver.findElement(By.xpath("//*[@id='password']")).sendKeys("anubhav@123");
 		//driver.findElement(By.xpath("//*[@type='submit']")).click();
 	}
 	
