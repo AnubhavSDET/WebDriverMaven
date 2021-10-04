@@ -19,15 +19,16 @@ public class LoginTest {
 
 	@Test
 	public void doLogin(){
-		driver.get("https://www.facebook.com");
+		driver.get("https://www.demoblaze.com/");
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("anubhav.jain@gmail.com");
-		driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("anubhav@123");
+		driver.findElement(By.xpath("//*[@id=\"login2\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"loginusername\"]")).sendKeys("anubhav.jain@gmail.com");
+		driver.findElement(By.xpath("//*[@id=\"loginpassword\"]")).sendKeys("anubhav@123");
 		//driver.findElement(By.xpath("//*[@type='submit']")).click();
 	}
 	
 	@AfterSuite
 	public void tearDown() {
-		driver.close();
+	 driver.close();
 	}
 }
