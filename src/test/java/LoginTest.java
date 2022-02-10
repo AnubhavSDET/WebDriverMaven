@@ -25,7 +25,7 @@ public class LoginTest {
 		driver.findElement(By.xpath("/html/body/header/div/ol[2]/li[2]/a[1]")).click();
 		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("anubhav.jain@gmail.com");
 		driver.findElement(By.xpath("//*[@id='password']")).sendKeys("anubhav@123");
-		//driver.findElement(By.xpath("//*[@type='submit']")).click();
+		driver.findElement(By.xpath("//*[@type='submit']")).click();
 	}
 	
 	@AfterSuite
